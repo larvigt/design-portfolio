@@ -3,10 +3,7 @@
     border: 0 none;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: pink;
+    text-decoration: none;
 }
 
 ol, ul {
@@ -24,12 +21,14 @@ html, body {
 /* Placement */
 
 body {
+    background-color: rgb(255, 210, 217);
     display: flex;
     flex-direction: column;
 }
 
 .main {
     flex: 1 0 auto;
+    padding: 0.6em;
 }
 
 .header, .footer {
@@ -40,7 +39,12 @@ body {
 
 .header, .site-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.header #nav {
+    background-color:rgb(212, 200, 255);
+    border-radius: 1em;
 }
 
 /* Title */
@@ -104,8 +108,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+/* Image */
+
 img {
     max-width: 100%;
+}
+
+img.small { 
+    width: 50%;
+    padding-top: 0.6em;
 }
 
 /* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
