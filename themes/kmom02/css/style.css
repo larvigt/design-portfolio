@@ -4,6 +4,7 @@
  */
 @import '../../node_modules/normalize.css/normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Hind&display=swap");
 .fa,
 .fas,
 .far,
@@ -6202,11 +6203,11 @@ pre code {
   }
 }
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 * {
@@ -6249,12 +6250,19 @@ body {
 /* Header */
 .header, .site-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.header #nav {
+.header .active {
   background-color: rgb(212, 200, 255);
-  border-radius: 1em;
+  border-radius: 0.4em;
+}
+.header ul {
+  padding: 0.6em;
+}
+.header ul li {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 
 /* Title */
@@ -6276,7 +6284,6 @@ body {
 .title * {
   color: #111;
 }
-
 .title p {
   font-style: italic;
 }
@@ -6286,14 +6293,14 @@ body {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #222;
+  padding: 0.2em;
 }
-
-.footer a {
-  color: #222;
-}
-
 .footer .social {
   font-size: 2rem;
+  overflow: hidden;
+}
+.footer social a {
+  color: #222;
 }
 
 /* Typografy */
@@ -6318,45 +6325,7 @@ img {
   max-width: 100%;
 }
 
-img.small {
-  width: 50%;
+.small {
+  width: 45%;
   padding-top: 0.6em;
-}
-
-/* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
-/* Code */
-code {
-  margin: 0 0.1em;
-  padding: 0.1em 0.2em;
-  border: 1px solid #ccc;
-  border-radius: 0.3em;
-  background: #f5f5f5;
-  font-family: monospace;
-  font-size: 0.85rem;
-  line-height: 1.9824;
-}
-
-pre {
-  padding: 0 1em;
-  border: 1px solid #ccc;
-  border-radius: 0.3em;
-  background: #f5f5f5;
-}
-
-pre code {
-  display: block;
-  margin: 0;
-  padding: 1.1111em 0;
-  border: 0 none;
-  background: transparent;
-  overflow-x: auto;
-  line-height: 1.4;
-}
-
-/* Blockquote */
-blockquote {
-  font-style: italic;
-  margin-left: 1em;
-  padding-left: 1em;
-  border-left: 0.5em solid #f5f5f5;
 }
